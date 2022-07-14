@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/f74ad5aa23.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/overlay.css" />
+    <script src="app.js" defer></script>
+    <title>Order Summary Components</title>
+  </head>
+  <body>
+    <div id="backdrop"></div>
+    <main>
+      <aside id="modal" class="overlay">
+        <form id="form-control">
+          <label>Choose Your Annual Plan</label>
+          <p id="config-errors"></p>
+          <input
+            type="number"
+            name="annual-plan"
+            class="music-price-input bluetooth-price-input"
+          />
+
+          <button
+            type="submit"
+            id="price-confirm-btn"
+            class="confirm-btn disable"
+          >
+            Confirm
+          </button>
+        </form>
+      </aside>
+      <container class="cards">
+        <div class="cards-body">
+          <div class="logo">
+            <img
+              src="images/istockphoto-1171405481-612x612.jpg"
+              alt="cartoon-listening to music"
+            />
+          </div>
+          <h1>order Summary</h1>
+          <p>You can now listen to millons of songs,</p>
+          <p>audiobooks, and podcasts on</p>
+          <p>any device anywhere you like!</p>
+
+          <div class="annual-plan">
+            <i class="fa-solid fa-music" fa-2x></i>
+            <div id="annual-musicPlan-data">
+              <p>Annual Plan</p>
+              <div id="annual-1-data">
+                <span>$</span>
+                <span class="music-price">0.00</span>/year
+                <button class="change-musicplan-btn" data-annualplan="1">
+                  Change
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="active-btns">
+            <button type="submit" class="payment-btn">
+              Proceed to payment
+            </button>
+            <button class="cancel-btn">Cancel Order</button>
+          </div>
+        </div>
+      </container>
+      <container class="cards">
+        <div class="cards-body">
+          <div class="logo">
+            <img
+              src="images/istockphoto-1171405481-612x612.jpg"
+              alt="cartoon-listening to music"
+            />
+          </div>
+          <h1>order Summary</h1>
+          <p>You can now listen to millons of songs,</p>
+          <p>audiobooks, and podcasts on</p>
+          <p>any device anywhere you like!</p>
+
+          <div class="annual-plan">
+            <i class="fa-brands fa-bluetooth" fa-4x></i>
+
+            <div id="annual-bluetoothPlan-data">
+              <p>Annual Plan</p>
+              <div id="annual-2-data">
+                <span>$</span>
+                <span class="bluetooth-price">0.00</span>/year
+                <button class="change-bluetoothplan-btn" data-annualplan="2">
+                  Change
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="active-btns">
+            <button type="submit" class="payment-btn">
+              Proceed to payment
+            </button>
+            <button class="cancel-btn">Cancel Order</button>
+          </div>
+        </div>
+      </container>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,200 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-neutral--100: #a2d5c6;
+  --clr--neutral--500: #f5f0e1;
+  --clr--neutral--600: #188290;
+  --clr--primary--300: #077b8a;
+  --clr--primary--500: #5c3c92;
+  --clr--primary--600: #df3745;
+  --clr--primary--700: #000000b3;
+
+  --fs-small-200: 0.5rem;
+  --fs-small-300: 1.5rem;
+  --fs-medium-400: 1rem;
+  --fs-bold-600: 2rem;
+}
+body {
+  background-color: var(--clr-neutral--100);
+}
+main {
+  font-family: "Lucida Sans";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  gap: 70px;
+  margin: auto;
+}
+
+.cards {
+  background-color: var(--clr--primary--300);
+  margin: 2rem auto;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 60%;
+}
+
+.logo img {
+  width: 100%;
+  height: 13rem;
+  object-fit: cover;
+}
+.cards-body h1 {
+  text-align: center;
+  padding: 2rem 2rem 1.5rem 2rem;
+  font-size: va(--fs-bold-600);
+  color: var(--clr--neutral--500);
+  color: var(--clr--neutral--500);
+}
+.cards-body p {
+  text-align: center;
+  padding: 0.25rem;
+  padding-bottom: 0;
+  color: var(--clr-neutral--100);
+}
+.annual-plan {
+  width: 70%;
+  background-color: var(--clr--neutral--600);
+  margin: 1rem auto;
+  margin-top: 2rem;
+  border-radius: 8px;
+  padding: 0rem 0.5rem 0.5rem 0.5rem;
+}
+#annual-musicPlan-data {
+  text-align: center;
+  margin-top: -2rem;
+  margin-left: -4rem;
+}
+
+#annual-bluetoothPlan-data {
+  text-align: center;
+  margin-top: -2rem;
+  margin-left: -4rem;
+}
+
+.annual-plan p {
+  padding: 0.25rem;
+  padding-left: 2rem;
+  padding-bottom: 0.5rem;
+  color: var(--clr--neutral--500);
+}
+
+i {
+  font-size: var(--fs-bold-600);
+  color: var(--clr--primary--500);
+  padding: 0.5rem;
+  margin-bottom: -2rem;
+  margin-top: 1rem;
+  
+  border-radius: 50%;
+  background-color: var(--clr-neutral--100);
+}
+#annual-1-data {
+  text-align: center;
+  padding: 0.5rem 0 0.25rem 0;
+  color: var(--clr-neutral--100);
+}
+#annual-2-data {
+  text-align: center;
+  padding: 0.5rem 0 0.25rem 0;
+  color: var(--clr-neutral--100);
+}
+
+.annual-plan button {
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0.5rem;
+  margin-right: -5rem;
+  margin-left: 1rem;
+  background-color: var(--clr--primary--300);
+  color: var(--clr--neutral--500);
+  border: 1px solid var(--clr--primary--300);
+}
+
+.annual-plan button:hover {
+  background-color: rgb(180, 180, 180);
+  background-color: var(--clr--neutral--600);
+  border: 1px solid var(--clr--neutral--500);
+}
+
+.active-btns {
+  display: block;
+  padding: 1rem;
+}
+
+.payment-btn {
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  margin-bottom: 1rem;
+  width: 60%;
+  padding: 1rem;
+  box-shadow: 1px 1px 2px 1px var(--clr--primary--700);
+  font-size: var(--fs-small-400);
+  background-color: var(--clr--primary--500);
+  color: var(--clr--neutral--500);
+  border: 1px solid var(--clr--primary--500);
+}
+.payment-btn:hover {
+  border: 1px solid var(--clr--neutral--500);
+}
+.cancel-btn {
+  cursor: pointer;
+  display: block;
+  padding: 1rem;
+  margin: auto;
+  width: 60%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  background-color: var(--clr--neutral--400);
+  font-size: var(--fs-medium-400);
+  color: var(--clr-neutral--100);
+  
+  
+}
+.cancel-btn:hover {
+  
+  background-color: var(--clr--primary--600);
+}
+
+@media (max-width: 720px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .cards-body h1 {
+    font-size: 1.5rem;
+  }
+  .cards-body p {
+    font-size: 14px;
+  }
+  .annual-plan p {
+    margin-left: 4rem;
+  }
+  .annual-plan button {
+    margin-left: 0.25rem;
+    padding-left: 0.25rem;
+  }
+  #annual-1-data {
+    font-size: 14px;
+  }
+  #annual-2-data {
+    font-size: 14px;
+  }
+  .payment-btn {
+    font-size: 12px;
+    padding: 0.5rem;
+  }
+  .cancel-btn {
+    font-size: 12px;
+    padding: 0.5rem;
+  }
+}
